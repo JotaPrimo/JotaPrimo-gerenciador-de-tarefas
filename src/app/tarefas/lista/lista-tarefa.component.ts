@@ -18,7 +18,22 @@ export class ListaTarefaComponent implements OnInit {
 
   // sempre devo ter um emtodo para pegar todos os registros
   listarTodos(): Tarefa[] {
-      return this.tarefaService.listarTodos();
+    return this.tarefaService.listarTodos();
+  }
+
+  remover($event: any, tarefa: Tarefa): void {
+    $event.preventDefault();
+    if (confirm('Deseja deletar "' + tarefa.nome + '"?')) {
+      this.tarefaService.remover(tarefa.id);
+      this.tarefas = this.tarefaService.listarTodos();
+    }
+  }
+
+  alterarStatus(tarefa: Tarefa) {
+    if (confirm('Deseja alterar "' +tarefa.nome+ '" ?')) {
+      this.tarefaService.alterarStatus(tarefa.id);
+      this.tarefas = this.tarefaService.listarTodos();
+    }
   }
 
 }
