@@ -4,10 +4,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
-import { TarefaService } from "./shared";
+import {
+  TarefaService,
+  TarefaConcluidaDirective
+ } from "./shared";
+ 
 import { ListaTarefaComponent } from './lista';
 import { CadastrarTarefaComponent } from './cadastrar';
 import { EditarTarefaComponent } from './editar';
+
 
 
 
@@ -16,6 +21,7 @@ import { EditarTarefaComponent } from './editar';
     CadastrarTarefaComponent,
     EditarTarefaComponent,
     ListaTarefaComponent,
+    TarefaConcluidaDirective,
   ],
   imports: [
     CommonModule,
