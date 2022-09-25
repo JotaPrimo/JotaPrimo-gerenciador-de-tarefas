@@ -7,13 +7,15 @@ import { RouterModule } from '@angular/router';
 import { TarefaService } from "./shared";
 import { ListaTarefaComponent } from './lista';
 import { CadastrarTarefaComponent } from './cadastrar';
+import { EditarTarefaComponent } from './editar';
 
 
 
 @NgModule({
   declarations: [
+    CadastrarTarefaComponent,
+    EditarTarefaComponent,
     ListaTarefaComponent,
-    CadastrarTarefaComponent
   ],
   imports: [
     CommonModule,

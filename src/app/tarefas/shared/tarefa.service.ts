@@ -27,7 +27,7 @@ export class TarefaService {
   }
 
 
-  atualiazar(tarefa: Tarefa): void {
+  atualizar(tarefa: Tarefa): void {
     const tarefas: Tarefa[] = this.listarTodos();
     tarefas.forEach((obj, index, objs) => {
       if(tarefa.id === obj.id) {

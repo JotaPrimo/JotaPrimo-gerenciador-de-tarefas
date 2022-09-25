@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { EditarComponent } from './editar.component';
+import { EditarComponent } from './editar-tarefa.component';
 
 describe('EditarComponent', () => {
   let component: EditarComponent;

@@ -1,2 +1,3 @@
-export * from './editar.component';
+export * from './editar-tarefa.component';
+
 
